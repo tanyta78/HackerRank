@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewYearChaos", "NewYearChao
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinSwaps", "MinSwaps\MinSwaps.csproj", "{FE2A0DA9-8861-4005-B933-7A7D8886283F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulation", "ArrayManipulation\ArrayManipulation.csproj", "{82AD85E3-C331-4416-B203-F0EE213E9AA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FE2A0DA9-8861-4005-B933-7A7D8886283F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE2A0DA9-8861-4005-B933-7A7D8886283F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE2A0DA9-8861-4005-B933-7A7D8886283F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82AD85E3-C331-4416-B203-F0EE213E9AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82AD85E3-C331-4416-B203-F0EE213E9AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82AD85E3-C331-4416-B203-F0EE213E9AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82AD85E3-C331-4416-B203-F0EE213E9AA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
