@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
 
     class Program
@@ -10,41 +11,65 @@
         static List<int> freqQuery(List<List<int>> queries)
         {
             var dict = new Dictionary<int, int>();
-            var output = new List<int>();
+            var frequencies = new Dictionary<int, int>();
+            var result = new List<int>();
             foreach (var query in queries)
             {
-                var type = query[0];
-                var element = query[1];
-                switch (type)
-                {
-                    case 1: 
-                       if (!dict.ContainsKey(element))
-                       {
-                           dict.Add(element,0);
-                       }
+                var action = query[0];
+                var value = query[1];
 
-                       dict[element]+=1;
-                        break;
-                    case 2: 
-                        if (dict.ContainsKey(element))
-                        {
-                            dict[element]-=1;
-                        }
-                        break;
-                    case 3: 
-                        if (dict.ContainsValue(element))
-                        {
-                            output.Add(1);
-                        }
-                        else
-                        {
-                            output.Add(0);
-                        }
-                        break;
+                if (action == 1)
+                {
+                    if (!dict.ContainsKey(value))
+                    {
+                        dict.Add(value, 0);
+                    }
+
+                    var initValue = dict[value];
+                    dict[value] = initValue + 1;
+
+                    if (!frequencies.ContainsKey(initValue))
+                    {
+                        frequencies.Add(initValue, 0);
+                    }
+
+                    if (!frequencies.ContainsKey(initValue + 1))
+                    {
+                        frequencies.Add(initValue + 1, 0);
+                    }
+
+                    frequencies[initValue] -= 1;
+                    frequencies[initValue + 1] += 1;
+
+                }
+
+                if (action == 2 && dict.ContainsKey(value))
+                {
+                    var currValue = dict[value];
+                    if (currValue > 0)
+                    {
+                        dict[value] = currValue - 1;
+
+                        frequencies[currValue - 1] += 1;
+                        frequencies[currValue] -= 1;
+                    }
+                }
+
+                if (action == 3)
+                {
+                    if (!frequencies.ContainsKey(value))
+                    {
+                        result.Add(0);
+                    }
+                    else
+                    {
+                        result.Add(frequencies[value] > 0 ? 1 : 0);
+                    }
+
                 }
             }
 
-            return output;
+            return result;
         }
 
         static void Main(string[] args)
@@ -63,7 +88,8 @@
             List<int> ans = freqQuery(queries);
 
             Console.WriteLine(String.Join("\n", ans));
-
+            string destPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "result.txt");
+            File.WriteAllText(destPath, String.Join("\n", ans));
 
         }
     }
