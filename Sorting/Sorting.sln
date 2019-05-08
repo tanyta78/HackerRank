@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "BubbleSort\Bu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkAndToys", "MarkAndToys\MarkAndToys.csproj", "{097B2629-527B-4B47-8E7E-978506A8831C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankActivityNotification", "BankActivityNotification\BankActivityNotification.csproj", "{DC4C9E78-CEB1-4FCE-B5A4-91770B165E0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{097B2629-527B-4B47-8E7E-978506A8831C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{097B2629-527B-4B47-8E7E-978506A8831C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{097B2629-527B-4B47-8E7E-978506A8831C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4C9E78-CEB1-4FCE-B5A4-91770B165E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4C9E78-CEB1-4FCE-B5A4-91770B165E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4C9E78-CEB1-4FCE-B5A4-91770B165E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4C9E78-CEB1-4FCE-B5A4-91770B165E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

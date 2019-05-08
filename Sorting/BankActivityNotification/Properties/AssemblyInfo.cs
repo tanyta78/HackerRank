@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Comparator")]
+[assembly: AssemblyTitle("BankActivityNotification")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Comparator")]
+[assembly: AssemblyProduct("BankActivityNotification")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5fcad724-dadf-4398-b74d-cbd871dd4bab")]
+[assembly: Guid("dc4c9e78-ceb1-4fce-b5a4-91770b165e0c")]
 
 // Version information for an assembly consists of the following four values:
 //
